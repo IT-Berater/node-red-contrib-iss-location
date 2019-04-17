@@ -40,13 +40,14 @@ describe('iss-location node', function () {
             var n1 = helper.getNode('n1');
             n3.on('input', function (msg) {
                 try {
-                    msg.should.have.property('payload', '<output message>'); // (3) define output message
+                    msg.payload.iss_position.latitude.should.be.within(-90, 90); // (3) define output message
+                    msg.payload.iss_position.longitude.should.be.within(-180, 180); // (3) define output message
                     done();
                 } catch (e) {
                     done(e);
                 }
             });
-            n1.receive({ payload: '<input message>' }); // (2) define input message
+            n1.receive({}); // (2) define input message
         });
     });
 });

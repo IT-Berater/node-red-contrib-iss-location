@@ -1,0 +1,19 @@
+{
+    "IssLocation": {
+        "label": {
+            "service": "Service",
+            "method": "Method",
+            "host": "Host",
+            "header": "Header",
+            "value": "Value",
+            "isQuery": "isQuery"
+        },
+        "status": {
+            "requesting": "requesting"
+        },
+        "parameters": {
+            "ISSLocationNow": "ISSLocationNow",
+            "optionalParameters": "Options"
+        }
+    }
+}

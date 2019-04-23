@@ -39,7 +39,11 @@ module.exports = function (RED) {
                         }
                     }
                     if (data.body) {
-                        msg.payload = data.body;
+                        msg.payload = {
+                            lat: data.body.iss_position.latitude,
+                            lon: data.body.iss_position.longitude,
+                            name: data.body.timestamp
+                        };
                     }
                 }
                 return msg;

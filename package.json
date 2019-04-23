@@ -12,7 +12,9 @@
     }
   },
   "keywords": [
-    "node-red-nodegen"
+    "node-red-nodegen",
+    "node-red",
+    "iss"
   ],
   "dependencies": {
     "q": "1.5.1",
@@ -23,6 +25,10 @@
     "node-red": "0.18.7",
     "node-red-node-test-helper": "0.1.8"
   },
-  "author": "",
-  "license": "Apache 2.0"
+  "author": "kazuhitoyokoi",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuhitoyokoi/node-red-contrib-iss-location.git"
+  }
 }

@@ -1,14 +1,14 @@
 <script type="text/javascript">
     RED.nodes.registerType('iss-location', {
-        category: 'function',
+        category: 'analysis',
         color: '#89bf04',
         defaults: {
-            method: { value: "", required: true },
+            method: { value: "ISSLocationNow", required: true },
             name: { value: "" }
         },
         inputs: 1,
         outputs: 1,
-        icon: 'icon.png',
+        icon: 'white-globe.png',
         label: function () {
             return this.name || "iss-location";
         },
